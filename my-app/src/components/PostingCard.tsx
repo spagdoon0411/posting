@@ -1,27 +1,28 @@
 import React from 'react';
 
 type PostingCardProps = {
-  children: React.ReactNode;
   title: string;
-  image: string;
-  buttontext: string;
-  description: string;
+  markdown: string
 };
 
+/**
+ * A single card for previewing a project posting on the project exploration
+ * page. 
+ * 
+ * @param title: The project's title. 
+ * 
+ * @param markdown: The Markdown code to be displayed in this card.
+ *  
+ */
 function PostingCard(props: PostingCardProps) {
     return(
         <div className="card">
-            <img src={props.image} alt="image" width={200}/>
             <h3>
-                
+                {props.title}
             </h3>
             <p>
-                {props.description}
+                {props.markdown}
             </p>
-            {props.children}
-            <button>
-                {props.buttontext}
-            </button>
         </div>
     )
 }
