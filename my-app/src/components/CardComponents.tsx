@@ -50,10 +50,12 @@ const PostingCard: FC<PostingCardProps> = (props: PostingCardProps) => {
             <TagContainer>
                 {props.tags}
             </TagContainer>
+            
             <div className='postingTitle'>
                 {props.title}
             </div>
-            <p>
+            
+            <p className='postingMarkdown'>
                 {props.markdown}
             </p>
         </div>
