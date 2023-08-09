@@ -9,17 +9,11 @@
   --column-width: calc(var(--bodywidth) / var(--num-columns));
 }
 
-.card {
-  background-color: var(--main-card-dark);
-  padding: calc(var(--paragraph-font-size) * 3);
-  width: minmax(0.9 * var(--column-width), 50ch)
-}
-
 body {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background-color: var(--main-background-dark);
-  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: light;
   font-size: var(--paragraph-font-size);
   width: var(--bodywidth);

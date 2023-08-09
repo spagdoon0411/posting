@@ -1,3 +1,3 @@
-enum ContactTypes {
+export enum ContactTypes {
 
 }
