@@ -18,7 +18,10 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 200;
     font-size: 10;
-    border-radius: 3px;
+    border-radius: 5px;
+    border-color: var(--main-text-dark);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .postingTitle {
@@ -37,4 +40,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.tag {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 9pt;
+    padding: 0.4ch 1.5ch 0.4ch 1.5ch;
+    background-color: rgba(250, 87, 17, .33);
+    border-radius: 12px;
+    font-weight: 400;
+    margin: 3pt 2pt 3pt 2pt;
+}
+
+.tagContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2ch;
 }
