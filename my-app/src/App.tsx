@@ -1,13 +1,10 @@
 import './App.css';
 import {
   PostingCard,
-  TagContainer,
-  Tag,
-  ContactContainer,
-  Contact,
   CardStates,
   CardColumn
 } from './components/CardComponents';
+import { Navbar } from './components/Navbar';
 
 let testMarkdown1 = "Lorem ipsum dolor sit amet, consectetur adipiscing \
 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
@@ -61,41 +58,49 @@ let testTags4 = [
   "Graph Theory"
 ];
 
+let testLinks: [string, string][] = [
+  ["Home", ""],
+  ["Explore", ""],
+  ["Communities", ""]
+];
 
 function App() {
   return (
-    <div className='columnOrganizer'>
-      <CardColumn>
-        <PostingCard 
-        title="Hospice of SLO Website"
-        markdown={testMarkdown1}
-        state={CardStates.expanded}
-        tags={testTags1}>
-        </PostingCard>
+    <div>
+      <Navbar pageTitle='Find a Project' links={testLinks}></Navbar>
+      <div className='columnOrganizer'>
+        <CardColumn>
+          <PostingCard 
+          title="Hospice of SLO Website"
+          markdown={testMarkdown1}
+          state={CardStates.expanded}
+          tags={testTags1}>
+          </PostingCard>
 
-        <PostingCard 
-        title="Isomer Enumeration"
-        markdown={testMarkdown2}
-        state={CardStates.expanded}
-        tags={testTags2}>
-        </PostingCard>
-      
-      </CardColumn>
-      <CardColumn>
-        <PostingCard 
-        title="FAR 10k Rocket Manufacturing"
-        markdown={testMarkdown3}
-        state={CardStates.expanded}
-        tags={testTags3}>
-        </PostingCard>
-        <PostingCard 
-        title="Analysis of CS Student Social Networks"
-        markdown={testMarkdown4}
-        state={CardStates.expanded}
-        tags={testTags4}>
-        </PostingCard>
-      
-      </CardColumn>
+          <PostingCard 
+          title="Isomer Enumeration"
+          markdown={testMarkdown2}
+          state={CardStates.expanded}
+          tags={testTags2}>
+          </PostingCard>
+        
+        </CardColumn>
+        <CardColumn>
+          <PostingCard 
+          title="FAR 10k Rocket Manufacturing"
+          markdown={testMarkdown3}
+          state={CardStates.expanded}
+          tags={testTags3}>
+          </PostingCard>
+          <PostingCard 
+          title="Analysis of CS Student Social Networks"
+          markdown={testMarkdown4}
+          state={CardStates.expanded}
+          tags={testTags4}>
+          </PostingCard>
+        
+        </CardColumn>
+      </div>
     </div>
   );
 }

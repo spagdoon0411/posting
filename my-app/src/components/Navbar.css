@@ -1,0 +1,24 @@
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    margin: 24pt 0pt 0pt 0pt;
+    align-items: left;
+}
+
+.pageTitle {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 32pt;
+    font-weight: 600;
+    margin: 8pt 0pt 24pt 0pt;
+}
+
+.pageList {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 4ch;
+}

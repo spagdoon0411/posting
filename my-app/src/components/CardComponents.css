@@ -3,18 +3,18 @@
     --main-card-dark: #2B2529;
     --main-text-dark: #FFC089;
   
-    --paragraph-font-size: 11pt;
+    --paragraph-font-size: 12pt;
     --bodywidth: 50vw;
     --num-columns: 2; 
-    --characters-across-card: 30;
+    --characters-across-card: 28;
     --column-width: calc(var(--characters-across-card) * var(--paragraph-font-size) * 0.8);
 }
 
 .card {
     background-color: var(--main-card-dark);
-    padding: calc(var(--paragraph-font-size) * 2.5);
+    padding: calc(var(--paragraph-font-size) * 2.6);
     width: minmax(0.9 * var(--column-width), 50ch);
-    margin: 20px;
+    margin: 0px 0px 40px 0px;
     border-radius: 5px;
     border-color: var(--main-text-dark);
     border-width: 1px;
@@ -25,6 +25,7 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18pt;
     font-weight: 500;
+    margin-bottom: 1.5ch;
 }
 
 .postingMarkdown {
@@ -44,16 +45,16 @@
 .columnOrganizer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 40px
 }
 
 .tag {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 8.5pt;
+    font-size: 9pt;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 9;
     font-weight: 500;
 
     padding: 0.4ch 1.5ch 0.4ch 1.5ch;
