@@ -134,13 +134,20 @@ type TagProps = {
     color: TagColors
 }
 
+let tagColor = "rgba(250, 87, 17, .33)";
+let tagHoverColor = "rgba(163, 54, 8, .33)"
+
 /**
  * @param children The text this tag contains. SHOULD ONLY BE ONE ELEMENT.
  * @param color The color of this tag, chosen from TagColors.
  */
 const Tag: FC<TagProps> = (props: TagProps) => 
 {
-    return <div className='tag'>
+    const [beingHovered, setBeingHovered] = useState(false);
+    return <div className='tag' 
+        onMouseEnter={() => setBeingHovered(true)}
+        onMouseLeave={() => setBeingHovered(false)}
+        style={{backgroundColor: beingHovered ? tagHoverColor : tagColor}}>
         {props.children}
     </div>
 }

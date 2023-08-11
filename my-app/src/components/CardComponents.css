@@ -7,7 +7,7 @@
     --paragraph-font-size: 12pt;
     --bodywidth: 50vw;
     --num-columns: 2; 
-    --characters-across-card: 29;
+    --characters-across-card: 28;
     --column-width: calc(var(--characters-across-card) * var(--paragraph-font-size) * 0.8);
 }
 
@@ -59,7 +59,6 @@
     font-weight: 500;
 
     padding: 0.4ch 1.5ch 0.4ch 1.5ch;
-    background-color: rgba(250, 87, 17, .33);
     border-radius: 12px;
     margin: 3pt 2pt 3pt 2pt;
 }
